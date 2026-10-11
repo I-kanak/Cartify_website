@@ -1,0 +1,37 @@
+{
+  "name": "cartify",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate",
+    "db:push": "prisma db push",
+    "db:seed": "node prisma/seed.js",
+    "db:setup": "prisma db push && node prisma/seed.js",
+    "db:studio": "prisma studio"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.16.3",
+    "@reduxjs/toolkit": "^2.8.2",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.525.0",
+    "next": "15.3.5",
+    "next-auth": "^5.0.0-beta.32",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "react-hot-toast": "^2.5.2",
+    "react-redux": "^9.2.0",
+    "recharts": "^3.1.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "prisma": "^6.16.3",
+    "tailwindcss": "^4"
+  }
+}
